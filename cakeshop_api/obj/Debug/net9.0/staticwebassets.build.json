@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "HjEBBPeyFrygH8atSxSW9yrtVshuGAZMI2I88X1Iosk=",
+  "Source": "cakeshop_api",
+  "BasePath": "_content/cakeshop_api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
