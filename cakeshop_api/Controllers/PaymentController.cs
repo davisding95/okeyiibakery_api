@@ -69,8 +69,8 @@ namespace cakeshop_api.Controllers
                     PaymentMethodTypes = new List<string> { "card" },
                     LineItems = lineItems,
                     Mode = "payment",
-                    SuccessUrl = $"{_configuration["Frontend:Url"]}/payment/success?session_id={{CHECKOUT_SESSION_ID}}",
-                    CancelUrl = $"{_configuration["Frontend:Url"]}/orders/{pendingOrderId}",
+                    SuccessUrl = $"https://salmon-sky-083ce9100.6.azurestaticapps.net/payment/success?session_id={{CHECKOUT_SESSION_ID}}",
+                    CancelUrl = $"https://salmon-sky-083ce9100.6.azurestaticapps.net/orders/{pendingOrderId}",
                     Metadata = new Dictionary<string, string>
                     {
                         {"PendingOrderId", pendingOrderId.ToString()},
