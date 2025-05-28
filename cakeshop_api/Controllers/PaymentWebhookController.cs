@@ -19,7 +19,7 @@ namespace cakeshop_api.Controllers
         {
             _configuration = configuration;
             _orderService = orderService;
-            _webhookSecret = _configuration["Stripe:WebhookSecret"];
+            _webhookSecret = Environment.GetEnvironmentVariable("Stripe__WebhookSecret");
         }
 
         [HttpPost]

@@ -13,9 +13,9 @@ var mongoConnectionString = Environment.GetEnvironmentVariable("MongoDB__Connect
 var mongoDatabaseName = Environment.GetEnvironmentVariable("MongoDB__DatabaseName");
 var mongoClient = new MongoClient(mongoConnectionString);
 var database = mongoClient.GetDatabase(mongoDatabaseName);
-// var mongoSettings = builder.Configuration.GetSection("MongoDB");
+//var mongoSettings = builder.Configuration.GetSection("MongoDB");
 //var mongoClient = new MongoClient(mongoSettings["ConnectionString"]);
-// var database = mongoClient.GetDatabase(mongoSettings["DatabaseName"]);
+//var database = mongoClient.GetDatabase(mongoSettings["DatabaseName"]);
 
 builder.Services.AddSingleton(database);
 builder.Services.AddSignalR();
