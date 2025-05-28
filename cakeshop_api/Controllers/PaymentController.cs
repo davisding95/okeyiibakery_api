@@ -24,7 +24,7 @@ namespace cakeshop_api.Controllers
             _orderService = orderService;
             _userService = userService;
             _configuration = configuration;
-            _stripeSecretKey = _configuration["Stripe:SecretKey"];
+            _stripeSecretKey = Environment.GetEnvironmentVariable("Stripe__SecretKey");
             StripeConfiguration.ApiKey = _stripeSecretKey;
         }
 
